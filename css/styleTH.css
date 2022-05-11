@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kaisei+HarunoUmi', 'Kanit', sans-serif;
+}
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.25s ease;
+}
+.navbar.sticky {
+  background: rgb(20, 20, 100);
+  padding: 5px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar.sticky img {
+  width: 175px;
+  height: 58px;
+}
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu-list {
+  display: inline-flex;
+}
+.menu-list li {
+  list-style: none;
+}
+.menu-list li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border-radius: 8px;
+  padding: 5px;
+}
+.menu-list li a:hover {
+  color: rgb(20, 20, 100);
+  background: white;
+  padding: 10px;
+}
+.menu-list li .lang {
+  border: 2px solid white;
+  color: white;
+}
+.menu-list li a.active {
+  color: rgb(20, 20, 100);
+  background: white;
+  padding: 8px;
+}
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url("../images/banner.jpg") no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.intro {
+  align-items: center;
+  justify-content: center;
+  padding-top: 35vh;
+}
+.intro h1 {
+  text-align: center;
+  color: rgba(255, 255, 255);
+  font-size: 64px;
+}
+.intro h2 {
+  margin-top: 0.25vh;
+  text-align: center;
+  color: rgba(255, 255, 255);
+  font-size: 35px;
+  font-weight: 500;
+}
+.intro p {
+  margin-top: 10vh;
+  text-align: center;
+  color: rgba(255, 255, 255);
+  font-size: 50px;
+  font-weight: 500;
+}
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+}
+.quote p {
+  font-size: 30px;
+}
+.contact {
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 10vh;
+  background: rgb(23, 21, 119);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.contact:hover {
+  cursor: pointer;
+  background: white;
+  color: rgb(17, 14, 163);
+  padding: 15px;
+  font-size: 35px;
+  transition: all 0.5s ease;
+}
+.about {
+  padding: 30px 0;
+}
+.about .title {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(17, 14, 163);
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
+}
+.expertise {
+  background: rgb(34, 34, 129);
+  width: 250px;
+  height: 225px;
+  margin: 25px;
+  border-radius: 25px;
+  display: inline-block;
+}
+.expertise:hover {
+  background: rgb(45, 45, 172)
+}
+.expert-icon {
+  margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expert-icon2 {
+  margin-top: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expertise h3 {
+  color: white;
+  text-align: center;
+  margin-top: 2vh;
+}
+.engineering .expert-group, .maintenance .expert-group{
+  margin-left: 39vh;
+}
+.installation .expert-group, .service .expert-group{
+  margin-right: 39vh;
+}
+.engineering, .maintenance {
+  display: flex;
+  padding: 30px 0;
+  background: rgb(34, 34, 129);
+}
+.installation, .service {
+  display: flex;
+  padding: 30px 0;
+  background: white;
+}
+.engineering .title, .maintenance .title {
+  margin-top: 2vh;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.installation .title, .service .title {
+  margin-top: 2vh;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(17, 14, 163);
+}
+.div-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 30px;  
+}
+.engineering .div-content p, .maintenance .div-content p {
+  margin-left: -10vh;
+  margin-right: 20vh;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+}
+.installation .div-content p{
+  margin-left: 20vh;
+  margin-right: -10vh;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  font-size: 25px;
+  color: rgb(17, 14, 163);
+  text-align: justify;
+}
+.service .div-content p {
+  margin-left: 14vh;
+  margin-right: -14vh;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  font-size: 25px;
+  color: rgb(17, 14, 163);
+  text-align: justify;
+}
+.footer {
+  background: rgb(223, 222, 222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.footer p {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(17, 14, 163);
+}
+.footer .rights {
+  margin-left: 35px;
+}
+
+
+
